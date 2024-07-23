@@ -21,5 +21,8 @@ public class PasswordGeneratorGUI extends JFrame {
         //terminate the program when the GUI is closed(ends the process)
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
+        //centre the GUI to the screen
+        setLocationRelativeTo(null);
+
     }
 }
