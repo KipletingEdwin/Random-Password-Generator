@@ -2,6 +2,7 @@
 //this class will inherit from the JFrame class
 
 import javax.swing.*;
+import java.awt.*;
 
 public class PasswordGeneratorGUI extends JFrame {
     public  PasswordGeneratorGUI(){
@@ -23,6 +24,25 @@ public class PasswordGeneratorGUI extends JFrame {
 
         //centre the GUI to the screen
         setLocationRelativeTo(null);
+
+        //render GUI components
+        addGuiComponents();
+    }
+
+    private  void  addGuiComponents() {
+        //create title text
+        JLabel titleLabel = new JLabel("Password Generator");
+
+        //increase the font size and make it bold
+        titleLabel.setFont(new Font("Dialog",Font.BOLD, 32));
+
+        //center the text to the screen
+        titleLabel.setHorizontalAlignment(SwingConstants.CENTER);
+
+        //set x,y,z coordinates and width/height values
+
+        titleLabel.setBounds(0, 10, 540, 39);
+
 
     }
 }
