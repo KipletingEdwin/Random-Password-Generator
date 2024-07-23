@@ -60,6 +60,9 @@ public class PasswordGeneratorGUI extends JFrame {
 
         //create a lack border around the text area
 
+        passwordOutputPane.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        add(passwordOutputPane);
+
 
 
 
