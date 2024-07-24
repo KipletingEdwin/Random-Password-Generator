@@ -100,6 +100,12 @@ public class PasswordGeneratorGUI extends JFrame {
         symbolsToggle.setBounds(282,373,225,56);
         add(symbolsToggle);
 
+        //create generate button
+        JButton generateButton = new JButton("Generate");
+        generateButton.setFont(new Font("Dialog",Font.PLAIN,32));
+        generateButton.setBounds(155,477,222,41);
+        add(generateButton);
+
 
 
 
