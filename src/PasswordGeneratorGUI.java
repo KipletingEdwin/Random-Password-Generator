@@ -59,7 +59,6 @@ public class PasswordGeneratorGUI extends JFrame {
         passwordOutputPane.setBounds(25,97,479,70);
 
         //create a black border around the text area
-
         passwordOutputPane.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         add(passwordOutputPane);
 
@@ -74,26 +73,30 @@ public class PasswordGeneratorGUI extends JFrame {
         passwordLengthInputArea.setFont(new Font("Dialog",Font.PLAIN,32));
         passwordLengthInputArea.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         passwordLengthInputArea.setBounds(310,215,192,39);
-        add(passwordLengthLabel);
+        add(passwordLengthInputArea);
 
         //create toggle buttons
         //uppercase letter toggle
         JToggleButton uppercaseToggle = new JToggleButton("Uppercase");
+        uppercaseToggle.setFont(new Font("Dialog",Font.PLAIN,26));
         uppercaseToggle.setBounds(25,302,255,56);
         add(uppercaseToggle);
 
         //lowercase letter toggle
         JToggleButton lowercaseToggle = new JToggleButton("Lowercase");
+        lowercaseToggle.setFont(new Font("Dialog",Font.PLAIN,26));
         lowercaseToggle.setBounds(282,302,225,56);
         add(lowercaseToggle);
 
         //Numbers toggle
         JToggleButton numbersToggle = new JToggleButton("Numbers");
+        numbersToggle.setFont(new Font("Dialog",Font.PLAIN,26));
         numbersToggle.setBounds(25,373,225,56);
         add(numbersToggle);
 
         //symbols toggle
         JToggleButton symbolsToggle = new JToggleButton("Symbols");
+        symbolsToggle.setFont(new Font("Dialog",Font.PLAIN,26));
         symbolsToggle.setBounds(282,373,225,56);
         add(symbolsToggle);
 
