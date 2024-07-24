@@ -69,6 +69,13 @@ public class PasswordGeneratorGUI extends JFrame {
         passwordLengthLabel.setBounds(25,215,272,39);
         add(passwordLengthLabel);
 
+        //create password length input
+        JTextArea passwordLengthInputArea = new JTextArea();
+        passwordLengthInputArea.setFont(new Font("Dialog",Font.PLAIN,32));
+        passwordLengthInputArea.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        passwordLengthInputArea.setBounds(310,215,192,39);
+        add(passwordLengthLabel);
+
         //create toggle buttons
         //uppercase letter toggle
         JToggleButton uppercaseToggle = new JToggleButton("Uppercase");
