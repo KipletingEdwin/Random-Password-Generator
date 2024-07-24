@@ -80,6 +80,16 @@ public class PasswordGeneratorGUI extends JFrame {
         lowercaseToggle.setBounds(282,302,225,56);
         add(lowercaseToggle);
 
+        //Numbers toggle
+        JToggleButton numbersToggle = new JToggleButton("Numbers");
+        numbersToggle.setBounds(25,373,225,56);
+        add(numbersToggle);
+
+        //symbols toggle
+        JToggleButton symbolsToggle = new JToggleButton("Symbols");
+        symbolsToggle.setBounds(282,373,225,56);
+        add(symbolsToggle);
+
 
 
 
