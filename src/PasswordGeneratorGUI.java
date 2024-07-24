@@ -58,7 +58,7 @@ public class PasswordGeneratorGUI extends JFrame {
         JScrollPane passwordOutputPane  = new JScrollPane(passwordOutput);
         passwordOutputPane.setBounds(25,97,479,70);
 
-        //create a lack border around the text area
+        //create a black border around the text area
 
         passwordOutputPane.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         add(passwordOutputPane);
@@ -74,6 +74,11 @@ public class PasswordGeneratorGUI extends JFrame {
         JToggleButton uppercaseToggle = new JToggleButton("Uppercase");
         uppercaseToggle.setBounds(25,302,255,56);
         add(uppercaseToggle);
+
+        //lowercase letter toggle
+        JToggleButton lowercaseToggle = new JToggleButton("Lowercase");
+        lowercaseToggle.setBounds(282,302,225,56);
+        add(lowercaseToggle);
 
 
 
