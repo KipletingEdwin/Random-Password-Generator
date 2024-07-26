@@ -33,5 +33,12 @@ public class PasswordGenerator {
         if(includeNumbers) validCharacters += NUMBERS;
         if(includeSymbols) validCharacters += SPECIAL_SYSMBOLS;
 
+        //build password
+
+        for (int i = 0; i < length; i++){
+            //generate a random index
+            int randomIndex = random.nextInt(validCharacters.length());
+        }
+
     }
 }
