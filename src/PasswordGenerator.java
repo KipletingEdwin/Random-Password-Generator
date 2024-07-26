@@ -38,6 +38,12 @@ public class PasswordGenerator {
         for (int i = 0; i < length; i++){
             //generate a random index
             int randomIndex = random.nextInt(validCharacters.length());
+
+            //get the char based on the random index
+            char randomChar = validCharacters.charAt(randomIndex);
+
+            //store char into password builder
+            passwordBuilder.append(randomChar);
         }
 
     }
