@@ -128,6 +128,15 @@ public class PasswordGeneratorGUI extends JFrame {
 
                 int passwordLength = Integer.parseInt(passwordLengthInputArea.getText());
                 if(anyToggleSelected){
+                    String generatedPassword = passwordGenerator.generatePassword(passwordLength,
+                            uppercaseToggle.isSelected(),
+                            lowercaseToggle.isSelected(),
+                            numbersToggle.isSelected(),
+                            symbolsToggle.isSelected()
+                            );
+
+                    //display password back to the user
+                    passwordOutput.setText(generatedPassword);
 
                 }
             }
