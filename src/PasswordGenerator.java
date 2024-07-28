@@ -44,7 +44,12 @@ public class PasswordGenerator {
 
             //store char into password builder
             passwordBuilder.append(randomChar);
+
+            //do this until we have reached the length that the user has provided us
         }
+
+        //return the result
+        return  passwordBuilder.toString();
 
     }
 }

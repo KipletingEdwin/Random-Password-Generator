@@ -3,8 +3,13 @@
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class PasswordGeneratorGUI extends JFrame {
+    private  PasswordGenerator passwordGenerator;
+
+
     public  PasswordGeneratorGUI(){
         //render the frame and the title
         super("Password Generator");
@@ -24,6 +29,10 @@ public class PasswordGeneratorGUI extends JFrame {
 
         //centre the GUI to the screen
         setLocationRelativeTo(null);
+
+        //init passwordGenerator
+
+        passwordGenerator = new PasswordGenerator();
 
         //render GUI components
         addGuiComponents();
@@ -104,6 +113,25 @@ public class PasswordGeneratorGUI extends JFrame {
         JButton generateButton = new JButton("Generate");
         generateButton.setFont(new Font("Dialog",Font.PLAIN,32));
         generateButton.setBounds(155,477,222,41);
+        generateButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //validation: generate a password only when length > 0 and one of the toggle button is pressed
+                if (passwordLengthInputArea.getText().length() <= 0) return;
+                boolean anyToggleSelected = lowercaseToggle.isSelected() ||
+                        uppercaseToggle.isSelected() ||
+                        numbersToggle.isSelected() ||
+                        symbolsToggle.isSelected();
+
+                //generate password
+                //converts a text to an integer value
+
+                int passwordLength = Integer.parseInt(passwordLengthInputArea.getText());
+                if(anyToggleSelected){
+
+                }
+            }
+        });
         add(generateButton);
 
 
